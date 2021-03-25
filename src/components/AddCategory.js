@@ -22,6 +22,7 @@ export const AddCategory = ({setCategories}) => {
     return (
         //si tenemos un elemento que agrupe a otros elementos no es necesario el fragment <></> en este caso, form
         <form onSubmit={handleSubmit}>
+                <p>{inputValue}</p>
                 <input 
                     type="text"
                     value={inputValue}

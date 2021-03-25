@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory'
 import { GifGrid } from './components/GifGrid'
 
-export const GifExpertApp = () =>{
+export const GifExpertApp = ({defaultCategories = []}) =>{
 
 
-    const [categories, setCategories] = useState(['Simpsons'])
+    const [categories, setCategories] = useState(defaultCategories)
 
     /*const handleAdd = () => {
         //Mantengo las categorias anteriores y agrego una nueva
